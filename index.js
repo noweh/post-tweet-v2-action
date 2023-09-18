@@ -1,10 +1,18 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const {Client} = require('twitter-api-sdk');
+const {Client, auth} = require('twitter-api-sdk');
 
 try {
     console.log("start to prepare a tweet");
-    const client = new Client(core.getInput('bearer_token'));
+
+    const authClient = new auth.OAuth2User({
+        client_id: core.getInput('consumer-key'),
+        client_secret: core.getInput('consumer-secret'),
+        token: core.getInput('access-token'),
+        token_secret: core.getInput('access-token-secret')
+    })
+    const client = new Client(authClient);
+
     client.tweets.createTweet({
         text: core.getInput('message')
     }).then((tweet) => {

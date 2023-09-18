@@ -5,8 +5,17 @@ inputs:
   message:
     description: 'The message ("tweet") to post to twitter.'
     required: true
-  bearer-token:
-    description: 'Bearer Token, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+  consumer-key:
+    description: 'Consumer API key, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+    required: true
+  consumer-secret:
+    description: 'Consumer API secret key, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+    required: true
+  access-token:
+    description: 'Application access token, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+    required: true
+  access-token-secret:
+    description: 'Application access token secret, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
     required: true
 runs:
   using: 'node16'
