@@ -34,7 +34,7 @@ jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
-      - uses: noweh/post-tweet-v2-action@v1
+      - uses: noweh/post-tweet-v2-action@v1.0
         with:
           message: "Hi, this is a test!"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_KEY }}
