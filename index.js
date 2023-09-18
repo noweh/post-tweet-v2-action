@@ -9,7 +9,7 @@ try {
         appKey: core.getInput('consumer-key'),
         appSecret: core.getInput('consumer-secret'),
         accessToken: core.getInput('access-token'),
-        accessTokenSecret: core.getInput('access-token-secret')
+        accessSecret: core.getInput('access-token-secret')
     }
 
     const client = new TwitterApi(credentials);
