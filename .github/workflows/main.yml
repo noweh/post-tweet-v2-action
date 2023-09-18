@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: noweh/post-tweet-v2-action@v0.1
         with:
-          status: "Hi, this is a test!"
+          message: "Hi, this is a test!"
           bearer-token: ${{ secrets.TWITTER_BEARER_TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
