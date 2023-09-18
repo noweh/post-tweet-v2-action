@@ -3,11 +3,11 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to test a post to Twitter
+    name: A job to test a post tweet action
     steps:
       - name: Hello world action step
         id: hello
-        uses: noweh/post-tweet-v2-action@v0.10
+        uses: noweh/post-tweet-v2-action@v1
         with:
           message: "Hello world, this is a test!"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_KEY }}
