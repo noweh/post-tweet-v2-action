@@ -17,6 +17,9 @@ inputs:
   access-token-secret:
     description: 'Application access token secret, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
     required: true
+  bearer-token:
+    description: 'Application bearer token, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+    required: true
 runs:
   using: 'node16'
   main: 'index.js'
