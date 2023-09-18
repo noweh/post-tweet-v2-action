@@ -1,0 +1,16 @@
+name: 'Post Tweet V2 Action'
+description: 'Post a tweet to Twitter during a GitHub Actions workflow with Twitter REST API for Version 2 endpoint..'
+author: 'Julien SCHMITT'
+inputs:
+  message:
+    description: 'The message ("tweet") to post to twitter.'
+    required: true
+  bearer-token:
+    description: 'Bearer Token, available in the "Keys and tokens" section of your application in the Twitter Developer site.'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: edit
+  color: blue

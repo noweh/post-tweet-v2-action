@@ -4,7 +4,7 @@
 [![MIT Licensed](https://img.shields.io/github/license/noweh/twitter-api-v2-php)](licence.md)
 [![twitter](https://img.shields.io/twitter/follow/Noweh95?style=social)](https://twitter.com/Noweh95)
 
-Post a Tweet from a GitHub Action workflow, with Twitter REST API for Version 2 endpoints.
+Post a Tweet from a GitHub Action workflow, with Twitter REST API for Version 2 endpoint.
 
 ## Active your developer account
 Before anything else, you must follow [this tutorial](https://developer.twitter.com/en/docs/tutorials/getting-started-with-r-and-v2-of-the-twitter-api).
@@ -20,12 +20,10 @@ Configure the authentication keys and tokens for your Twitter app as secrets in 
 
 ## Workflow Usage
 
-Configure your workflow to use `ethomson/send-tweet-action@v1`,
-and provide the tweet you want to send as the `status` input.
+Configure your workflow to use `noweh/post-tweet-v2-action@v1`,  and provide the tweet you want to send as the `status` input.
 
 Provide the authentication keys and tokens for your Twitter app
-as the `consumer-key`, `consumer-secret`, `access-token`, and
-`access-token-secret` inputs.
+as the `account-id` and `bearer-token` inputs.
 
 For example:
 
@@ -39,10 +37,7 @@ jobs:
       - uses: noweh/post-tweet-v2-action@v1
         with:
           status: "Hi, this is a test!"
-          consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-          consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-          access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          bearer-token: ${{ secrets.TWITTER_BEARER_TOKEN }}
 ```
 
 Now whenever you push something to your repository, GitHub Actions will tweet on your behalf.

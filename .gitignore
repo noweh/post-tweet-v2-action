@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#package
+package-lock.json
+
+#others
+.idea/
+.project/
+.bundle/
+*.retry
+.vscode/

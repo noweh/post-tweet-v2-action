@@ -1,0 +1,25 @@
+{
+  "name": "post-tweet-v2-action",
+  "version": "1.0.0",
+  "description": "[![Badge Twitter](https://img.shields.io/badge/Twitter%20API-v2-828cb7.svg?style=flat-square&logo=twitter&color=1DA1F2)](https://developer.twitter.com/en/docs/twitter-api)\r [![MIT Licensed](https://img.shields.io/github/license/noweh/twitter-api-v2-php)](licence.md)\r [![twitter](https://img.shields.io/twitter/follow/Noweh95?style=social)](https://twitter.com/Noweh95)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noweh/post-tweet-v2-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noweh/post-tweet-v2-action/issues"
+  },
+  "homepage": "https://github.com/noweh/post-tweet-v2-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^5.1.1",
+    "twitter-api-sdk": "^1.2.1"
+  }
+}
