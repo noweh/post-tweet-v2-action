@@ -1,4 +1,9 @@
 # Send a tweet from a GitHub Actions workflow
+
+[![Badge Twitter](https://img.shields.io/badge/Twitter%20API-v2-828cb7.svg?style=flat-square&logo=twitter&color=1DA1F2)](https://developer.twitter.com/en/docs/twitter-api)
+[![MIT Licensed](https://img.shields.io/github/license/noweh/twitter-api-v2-php)](licence.md)
+[![twitter](https://img.shields.io/twitter/follow/Noweh95?style=social)](https://twitter.com/Noweh95)
+
 Post a Tweet from a GitHub Action workflow, with Twitter REST API for Version 2 endpoints.
 
 ## Active your developer account
