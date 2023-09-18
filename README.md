@@ -36,8 +36,11 @@ jobs:
     steps:
       - uses: noweh/post-tweet-v2-action@v1
         with:
-          status: "Hi, this is a test!"
-          bearer-token: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          message: "Hi, this is a test!"
+          consumer-key: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          consumer-secret: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 ```
 
 Now whenever you push something to your repository, GitHub Actions will tweet on your behalf.
