@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: noweh/post-tweet-v2-action@v0.2
+        uses: noweh/post-tweet-v2-action@v0.3
         with:
           message: "Hi, this is a test!"
           bearer-token: ${{ secrets.TWITTER_BEARER_TOKEN }}
