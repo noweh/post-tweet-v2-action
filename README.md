@@ -1,6 +1,7 @@
 # Send a tweet from a GitHub Actions workflow
 
 [![Badge Twitter](https://img.shields.io/badge/Twitter%20API-v2-828cb7.svg?style=flat-square&logo=twitter&color=1DA1F2)](https://developer.twitter.com/en/docs/twitter-api)
+[![Run Tests](https://github.com/noweh/post-tweet-v2-action/actions/workflows/main.yml/badge.svg)](https://github.com/noweh/post-tweet-v2-action/actions/workflows/run-tests.yml)
 [![MIT Licensed](https://img.shields.io/github/license/noweh/twitter-api-v2-php)](licence.md)
 [![twitter](https://img.shields.io/twitter/follow/Noweh95?style=social)](https://twitter.com/Noweh95)
 
