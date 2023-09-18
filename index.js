@@ -3,6 +3,7 @@ const github = require('@actions/github');
 const {Client} = require('twitter-api-sdk');
 
 try {
+    console.log("start to prepare a tweet");
     const client = new Client(core.getInput('bearer_token'));
     client.tweets.createTweet({
         text: core.getInput('message')
