@@ -1,16 +1,18 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const { TwitterApi } = require('twitter-api-v2');
+const { TwitterApi, TwitterApiTokens } = require('twitter-api-v2');
 
 try {
     console.log("start to prepare a tweet");
 
-    const client = new TwitterApi({
+    const credentials = {
         appKey: core.getInput('consumer-key'),
         appSecret: core.getInput('consumer-secret'),
         accessToken: core.getInput('access-token'),
         accessTokenSecret: core.getInput('access-token-secret')
-    });
+    }
+
+    const client = new TwitterApi(credentials);
 
     client.v2.tweet(core.getInput('message')).then((tweet) => {
         console.log(`Tweet posted with ID ${tweet.data.id}`);
